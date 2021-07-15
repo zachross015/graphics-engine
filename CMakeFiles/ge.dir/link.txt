@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ge.dir/src/camera.cpp.o CMakeFiles/ge.dir/src/framebuffer.cpp.o CMakeFiles/ge.dir/src/geometry.cpp.o CMakeFiles/ge.dir/src/main.cpp.o CMakeFiles/ge.dir/src/math.cpp.o CMakeFiles/ge.dir/src/transform.cpp.o  -o ge  -lSDL2 

@@ -32,11 +32,12 @@ struct Camera : Transform {
          * (0,0) and uses the dimensions to create a virtual viewport which fits
          * in the window by scaling everything to the proper dimensions.
          *
-         * @param {Vec2f} position   The coordinates which the top-left corner
-         *                           of the window should view from
-         * @param {Vec2f} dimensions The width and height of the viewport
+         * @param {Vec2f} p1 The coordinates which the top-left corner of the 
+         *                   window should view from
+         * @param {Vec2f} p2 The coordinates which the bottom-right corner of 
+         *                   the window should view from
          */
-        Camera(Vec2f position, Vec2f dimensions);
+        Camera(Vec2f p1, Vec2f p2);
 
 
         /*************************/

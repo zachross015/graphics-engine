@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/zachary/Documents/Projects/graphics-engine
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/draw-lines.dir/all
+all: CMakeFiles/ge.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/draw-lines.dir/clean
+clean: CMakeFiles/ge.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/draw-lines.dir
+# Target rules for target CMakeFiles/ge.dir
 
 # All Build rule for target.
-CMakeFiles/draw-lines.dir/all:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/depend
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zachary/Documents/Projects/graphics-engine/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target draw-lines"
-.PHONY : CMakeFiles/draw-lines.dir/all
+CMakeFiles/ge.dir/all:
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/depend
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zachary/Documents/Projects/graphics-engine/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ge"
+.PHONY : CMakeFiles/ge.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/draw-lines.dir/rule: cmake_check_build_system
+CMakeFiles/ge.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zachary/Documents/Projects/graphics-engine/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/draw-lines.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zachary/Documents/Projects/graphics-engine/CMakeFiles 0
-.PHONY : CMakeFiles/draw-lines.dir/rule
+.PHONY : CMakeFiles/ge.dir/rule
 
 # Convenience name for target.
-draw-lines: CMakeFiles/draw-lines.dir/rule
+ge: CMakeFiles/ge.dir/rule
 
-.PHONY : draw-lines
+.PHONY : ge
 
 # clean rule for target.
-CMakeFiles/draw-lines.dir/clean:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/clean
-.PHONY : CMakeFiles/draw-lines.dir/clean
+CMakeFiles/ge.dir/clean:
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/clean
+.PHONY : CMakeFiles/ge.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

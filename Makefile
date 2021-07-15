@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named draw-lines
+# Target rules for targets named ge
 
 # Build rule for target.
-draw-lines: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 draw-lines
-.PHONY : draw-lines
+ge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ge
+.PHONY : ge
 
 # fast build rule for target.
-draw-lines/fast:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/build
-.PHONY : draw-lines/fast
+ge/fast:
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/build
+.PHONY : ge/fast
 
 src/camera.o: src/camera.cpp.o
 
@@ -129,7 +129,7 @@ src/camera.o: src/camera.cpp.o
 
 # target to build an object file
 src/camera.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/camera.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/camera.cpp.o
 .PHONY : src/camera.cpp.o
 
 src/camera.i: src/camera.cpp.i
@@ -138,7 +138,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/camera.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -147,7 +147,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/camera.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/framebuffer.o: src/framebuffer.cpp.o
@@ -156,7 +156,7 @@ src/framebuffer.o: src/framebuffer.cpp.o
 
 # target to build an object file
 src/framebuffer.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/framebuffer.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/framebuffer.cpp.o
 .PHONY : src/framebuffer.cpp.o
 
 src/framebuffer.i: src/framebuffer.cpp.i
@@ -165,7 +165,7 @@ src/framebuffer.i: src/framebuffer.cpp.i
 
 # target to preprocess a source file
 src/framebuffer.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/framebuffer.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/framebuffer.cpp.i
 .PHONY : src/framebuffer.cpp.i
 
 src/framebuffer.s: src/framebuffer.cpp.s
@@ -174,7 +174,7 @@ src/framebuffer.s: src/framebuffer.cpp.s
 
 # target to generate assembly for a file
 src/framebuffer.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/framebuffer.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/framebuffer.cpp.s
 .PHONY : src/framebuffer.cpp.s
 
 src/geometry.o: src/geometry.cpp.o
@@ -183,7 +183,7 @@ src/geometry.o: src/geometry.cpp.o
 
 # target to build an object file
 src/geometry.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/geometry.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/geometry.cpp.o
 .PHONY : src/geometry.cpp.o
 
 src/geometry.i: src/geometry.cpp.i
@@ -192,7 +192,7 @@ src/geometry.i: src/geometry.cpp.i
 
 # target to preprocess a source file
 src/geometry.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/geometry.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/geometry.cpp.i
 .PHONY : src/geometry.cpp.i
 
 src/geometry.s: src/geometry.cpp.s
@@ -201,7 +201,7 @@ src/geometry.s: src/geometry.cpp.s
 
 # target to generate assembly for a file
 src/geometry.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/geometry.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/geometry.cpp.s
 .PHONY : src/geometry.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -210,7 +210,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -219,7 +219,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -228,7 +228,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/math.o: src/math.cpp.o
@@ -237,7 +237,7 @@ src/math.o: src/math.cpp.o
 
 # target to build an object file
 src/math.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/math.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/math.cpp.o
 .PHONY : src/math.cpp.o
 
 src/math.i: src/math.cpp.i
@@ -246,7 +246,7 @@ src/math.i: src/math.cpp.i
 
 # target to preprocess a source file
 src/math.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/math.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/math.cpp.i
 .PHONY : src/math.cpp.i
 
 src/math.s: src/math.cpp.s
@@ -255,7 +255,7 @@ src/math.s: src/math.cpp.s
 
 # target to generate assembly for a file
 src/math.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/math.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/math.cpp.s
 .PHONY : src/math.cpp.s
 
 src/transform.o: src/transform.cpp.o
@@ -264,7 +264,7 @@ src/transform.o: src/transform.cpp.o
 
 # target to build an object file
 src/transform.cpp.o:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/transform.cpp.o
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/transform.cpp.o
 .PHONY : src/transform.cpp.o
 
 src/transform.i: src/transform.cpp.i
@@ -273,7 +273,7 @@ src/transform.i: src/transform.cpp.i
 
 # target to preprocess a source file
 src/transform.cpp.i:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/transform.cpp.i
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/transform.cpp.i
 .PHONY : src/transform.cpp.i
 
 src/transform.s: src/transform.cpp.s
@@ -282,7 +282,7 @@ src/transform.s: src/transform.cpp.s
 
 # target to generate assembly for a file
 src/transform.cpp.s:
-	$(MAKE) -f CMakeFiles/draw-lines.dir/build.make CMakeFiles/draw-lines.dir/src/transform.cpp.s
+	$(MAKE) -f CMakeFiles/ge.dir/build.make CMakeFiles/ge.dir/src/transform.cpp.s
 .PHONY : src/transform.cpp.s
 
 # Help Target
@@ -293,7 +293,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... draw-lines"
+	@echo "... ge"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"

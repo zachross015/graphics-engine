@@ -5,8 +5,8 @@
 #include <algorithm>
 #include <SDL2/SDL.h>
 #include <vector>
-#include <geometry.h>
-#include <camera.h>
+#include "../includes/geometry.h"
+#include "../includes/camera.h"
 
 
 class Window {
@@ -133,10 +133,6 @@ struct RotatingLines : Object, Transform {
         transform(&l1);
         transform(&l2);
 
-
-
-        //set_translation({x, y});
-
         iteration += 1;
         if(iteration > 360) {
             iteration = 0;
@@ -157,16 +153,26 @@ int main(int argc, char** argv) {
     srand(time(NULL));
     
 
+    const f32 SIZE = 2000;
     Window window("Hello World", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT );
+    Camera camera(Vec2f(-SIZE, -SIZE), Vec2f(SIZE, SIZE));
+    camera.rotate(45.0 / 180.0 * PI);
 
-    const f32 CAMERA_SIZE = 2000;
-    Camera* camera = new Camera(Vec2f(100, 100), Vec2f(CAMERA_SIZE, CAMERA_SIZE));
     RotatingLines* rl = new RotatingLines(SCREEN_WIDTH / 4);
+    camera.transform(rl);
+
+    for(int i = -1000; i <= 1000; i += 200) {
+        Line* line = new Line(i, -1000, i, 1000);
+        Line* line2 = new Line(-1000, i, 1000, i);
+        camera.transform(line);
+        camera.transform(line2);
+        window.draw(line);
+        window.draw(line2);
+    }
+
     window.draw(rl);
-    window.draw(camera);
     window.run();
     delete rl;
-    delete camera;
 
     return 0;
 

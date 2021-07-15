@@ -1,13 +1,14 @@
-#include <camera.h>
-#include <type_traits>
+#include "../includes/camera.h"
 
 
 Camera::Camera(Vec2f position, Vec2f dimensions) {
     Vec2f screen_dim(SCREEN_WIDTH, SCREEN_HEIGHT);
-    origin = position;
-    set_translation(position);
-    set_scale(screen_dim / (dimensions - position));
+    Vec2f scaled = screen_dim / (dimensions - position);
+    origin = (position + dimensions) / 2;
+    set_translation(position * scaled);
+    set_scale(scaled);
 }
+
 
 void Camera::translate(Vec2f translation) {
     Transform::translate(-translation);

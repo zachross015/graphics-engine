@@ -7,10 +7,10 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Init project name
-project(DrawLines)
+project(GraphicsEngine)
 
 # Set the name of the executable
-set(EXEC draw-lines)
+set(EXEC ge)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_BUILD_TYPE Debug)
 
@@ -22,7 +22,7 @@ include_directories(includes ${SDL2_INCLUDE_DIRS})
 
 # Set all the sources used for the project.
 # TODO: Make this run recursively on src so I don't have to do anything else
-file(GLOB SOURCES src/*.cpp src/drawing/*.cpp)
+file(GLOB SOURCES src/*.cpp)
 
 # Create the executable
 add_executable(${EXEC} ${SOURCES})
